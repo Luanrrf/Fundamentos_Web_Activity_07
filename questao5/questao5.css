@@ -1,0 +1,11 @@
+
+.question5{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#frase{
+    max-width: 60%;
+    text-align: justify;
+}

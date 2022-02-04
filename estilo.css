@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    height:100vh;
+    gap: 30px;
+    background-image: linear-gradient( to bottom, #bbbbce, rgb(12, 46, 160));
+
+}
+
+.top-buttons, .bottom-buttons{
+    display:flex;
+    gap:50px;
+}
+
+.button{
+    padding: 30px 70px;
+    background-color: #77c6d4ad;
+    border: 1px solid transparent;
+    border-radius: 58px;
+}
+
+.button:hover{
+    background-color: #3d6870f5;
+    color:white;
+}
+
+.button:active{
+    background-color: #77c6d4ad;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}

@@ -1,0 +1,26 @@
+.answer{
+    display:flex;
+    flex-direction: column;
+    border: 3px dashed rgba(0, 0, 255, 0.158);
+    border-radius: 88px;
+    padding: 45px;
+    gap: 20px;
+    align-items: center;
+}
+
+.birthday{
+    text-decoration: none;
+    text-align: center;
+}
+
+.birthday::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.send{
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    background-color: rgb(0, 119, 119);
+    color:white;
+}
