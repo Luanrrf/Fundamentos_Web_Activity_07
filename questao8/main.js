@@ -46,7 +46,7 @@ send.addEventListener("click", function(e){
 
     let semanas = parseInt(diasTotais / 7);
 
-    console.log("Você possui até hoje " + semanas + " semana(s) de distância.");
+    console.log("Da 1º data até a segunda percebemos que existe(m) " + semanas + " semana(s) de distância.");
 
     window.alert("Confira o console por favor!");
 })
