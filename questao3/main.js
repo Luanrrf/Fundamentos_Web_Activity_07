@@ -17,8 +17,16 @@ document.addEventListener('DOMContentLoaded',function(){
         }
     }
 
-    window.alert("Confira o console por favor");
-    console.log(myArray);
-    
+    let tabela = document.querySelector(".table");  
+    let tableRow;
+    for(let i = 0; i < myArray.length; i++){
+        if(i%2==false){
+            tableRow = document.createElement("tr");
+            tabela.appendChild(tableRow);   
+        }
+        let tableDoc = document.createElement("td");
+        tableDoc.innerHTML = myArray[i];   
+        tableRow.appendChild(tableDoc);     
+    }    
 });
 
