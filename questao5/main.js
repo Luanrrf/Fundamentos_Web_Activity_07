@@ -1,10 +1,12 @@
-document.addEventListener('DOMContentLoaded',function(){
-    var text = document.getElementById('frase').textContent;
+const btn = document.querySelector(".send");
+let text;
 
-    let search = window.prompt("Informe o que quer procurar no texto");
-    let substitute = window.prompt("Agora informe pelo que quer substituir");
+btn.addEventListener("click", function (e){
+    e.preventDefault();
 
-    console.log(text.length);
+    text = document.querySelector("#frase").value;
+    let search = document.querySelector(".search").value;
+    let substitute = document.querySelector(".substitute").value;
 
     for(let i = 0; i < text.length; i++){
         text = text.replace(search, substitute);
@@ -12,6 +14,17 @@ document.addEventListener('DOMContentLoaded',function(){
 
     console.log(text);
 
-    window.alert("Por favor confira o console");
+    const part1 = document.querySelector(".answer_part1");
+    part1.classList.add("display-none");
+
+    const part2 = document.querySelector(".text-replaced");
+    part2.textContent = text;
+
+    const btn2 = document.querySelector(".btn2");
+    btn2.classList.remove("display-none");
 
 });
+
+
+
+
